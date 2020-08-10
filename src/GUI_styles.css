@@ -1,0 +1,277 @@
+/*
+ * Jeopardy Game Desktop Application
+ * 
+ * Styles to design the application.
+ *
+ * Created By: Allison Poh, Spring 2018
+ */
+
+ Button {
+ 	-fx-font-size: 20pt;
+ } 
+ 
+/********************Main************************/
+ #designBox {
+ 	-fx-background-color: #0c2faa;
+ }
+
+ #welcomeMsg {
+ 	-fx-font-size: 20pt;
+ }
+
+ .promptTxt {
+ 	-fx-font-size: 10pt;
+ }
+  
+ #loginBtn {
+ 	-fx-font-size: 14pt;
+  	-fx-pref-width: 10000;
+ 	-fx-max-height: 22;
+ }
+
+ #loginVBox {
+ 	-fx-padding: 15;
+ 	-fx-background-color: white;
+ }
+ 
+ #loginVBox ComboBox, #loginVBox TextField {
+ 	-fx-pref-width: 10000;
+ }
+ 
+ #signUpBtn {
+ 	-fx-font-size: 8pt;
+  	-fx-pref-width: 55;
+ 	-fx-pref-height: 22;
+ }
+ 
+ SplitPane *.split-pane-divider {
+    -fx-padding: 0 1 0 1;
+ }
+ 
+/*******************SignUp***********************/
+ #signUpRoot {
+ 	-fx-background-color: white;
+ }
+ 
+ #signUpMsg {
+ 	-fx-font-size: 20pt;
+ }
+ 
+ #signUp2Btn {
+ 	-fx-font-size: 14pt;
+  	-fx-pref-width: 175;
+ 	-fx-max-height: 22;
+ }
+ 
+ #loginBtn2 {
+ 	-fx-font-size: 8pt;
+  	-fx-pref-width: 55;
+ 	-fx-pref-height: 22;
+ }
+ 
+ #sUpBtnBox {
+ 	-fx-padding: 10;
+ }
+ 
+ #signUpVBox TextField {
+ 	-fx-pref-width: 225;
+ }
+ 
+ #pwNote {
+ 	-fx-fill: RED;
+ }
+ 
+/******************GameBoard*********************/
+ #gameNewRoot {
+ 	-fx-background-color: white;
+ }
+ 
+ #gameNewGrid {
+ 	-fx-border-color: black;
+ }
+ 
+ .categories {
+ 	-fx-font-size: 15pt;
+ 	-fx-font-weight: bold;
+ }
+ 
+ .gameBtns {
+ 	-fx-cursor: hand;
+ }
+ 
+ .gameBtns:disabled {
+ 	-fx-background-color: BLUE;
+    -fx-opacity: 1;
+    -fx-text-fill: BLUE;
+ }
+
+ .gameBtns, .categories {
+ 	-fx-background-color: BLUE;
+ 	-fx-text-fill: YELLOW;
+ 	-fx-border-color: BLACK;
+ 	-fx-pref-width: 10000;
+ 	-fx-pref-height: 10000;
+ }
+ 
+/*******************Question*********************/
+ #question {
+ 	-fx-border-color: purple;
+ 	-fx-border-width: 12px;
+ 	-fx-background-color: white;
+ }
+ 
+ #questBox {
+ 	-fx-pref-width: 10000;
+ 	-fx-font-size: 14pt;
+ 	-fx-padding: 15;
+ 	-fx-background-color: transparent;
+ 	-fx-border-color: transparent;
+ }
+ 
+ TextArea {
+ 	-fx-border-color: rgba(0, 0, 0, 0.2);
+ 	-fx-background-color: white;
+ 	-fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+ }
+ 
+ TextArea .text {
+    -fx-text-alignment: center;
+ }
+ 
+ #ansBox {
+ 	-fx-padding: 15;
+ 	-fx-pref-width: 10000;
+ }
+ 
+ .answerBtns {
+ 	-fx-font-size: 14pt;
+ 	-fx-pref-width: 10000;
+ 	-fx-pref-height: 26;
+ 	-fx-border-color: navy;
+ 	-fx-border-width: 1px;
+ 	-fx-border-radius: 5px;
+ 	-fx-background-color: white;
+ 	-fx-cursor: HAND;
+ }
+ 
+ #closeBtn, #closeBtn2 {
+ 	-fx-font-size: 11pt;
+ 	-fx-font-weight: bold;
+ 	-fx-pref-width: 70;
+ 	-fx-pref-height: 18;
+ 	-fx-background-color: transparent;
+ 	-fx-cursor: hand;
+ }
+ 
+/******************Players**********************/
+#scoreBoard, #name {
+	-fx-font-size: 20pt;
+	-fx-text-fill: white;
+	-fx-font-weight: bold;
+}
+
+#name {
+	-fx-font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+}
+ 
+ 
+/****************AdminAccount******************/
+#adminPage {
+	-fx-background-color: white;
+}
+
+#vLabel {
+	-fx-font-size: 18pt;
+	-fx-padding: 0 0 10 0;
+}
+
+.adminBtn {
+	-fx-background-color: WHITE;
+    -fx-effect: dropshadow(three-pass-box , rgba(0,0,0,0.6) , 3, 0.0 , 0 , 1 );
+	-fx-pref-width: 225;
+	-fx-pref-height: 300;
+	-fx-max-width: 220;
+	-fx-max-height: 320;
+}
+
+/****************ViewAccounts******************/
+#accountTable {
+	-fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+    -fx-border-color: grey;    
+    -fx-selection-bar: purple;
+    -fx-font-size: 12pt;
+}
+
+/****************EditGameBoard******************/
+#editPage {
+	-fx-background-color: white;
+}
+
+#editLabel {
+	-fx-font-size: 18pt;
+	-fx-padding: 0 0 10 0;
+}
+
+#gameEdit {
+	-fx-pref-width: 180;
+	-fx-pref-height: 35;
+	-fx-font-size: 12pt;
+}
+
+#editSP {
+	-fx-border-color: grey;
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+}
+
+.tab-pane .tab {
+	-fx-pref-width: 115px;
+}
+
+.tab-pane .tab:selected {
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+    -fx-border-color: transparent;
+}
+
+.gridPane {
+	-fx-font-size: 10pt;
+	-fx-padding: 10px;
+}
+
+.qTXT {
+	-fx-font-weight: bold;
+}
+
+.tab {
+	-fx-font-weight: bold;
+	-fx-font-size: 12pt;
+	-fx-padding: 2px;
+}
+
+#exitBtn, #saveBtn, #scoreBtn, #exitBtn2, #saveBtn2, #scoreBtn2 {
+	-fx-background-color: transparent;
+	-fx-border-color: purple;
+	-fx-font-color: purple;
+	-fx-border-radius: 20;
+	-fx-border-width: 3px;
+	-fx-text-fill: purple;
+	-fx-font-weight: bold;
+	-fx-cursor: hand;
+	-fx-font-size: 10pt;
+	-fx-pref-width: 100px;
+}
+
+/******************highScore******************/
+#listV {
+    -fx-background-color: transparent;
+    -fx-font-size: 15pt;
+    -fx-font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+#listV .list-cell {
+    -fx-background-color: transparent;
+}
+
